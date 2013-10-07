@@ -88,7 +88,7 @@ static void Main(string[] args)
 Your console window should display "My name is Bob and my favorite number is 18". 
 
 ### 1.2.3 Code explanation
-Before you can use a variable, you first must declare it. Every variable in C# must have a type. The C# syntax to declare a variable starts with the data type, follow by a space, follow by the variable name (and the semi-colon if at the end of the line). Variable names must start with an alphabet letter, follow by any alpha-numeric characters or the underscore character. Variable names cannot contain any spaces, and cannot be the same as any of the [C# keywords](http://msdn.microsoft.com/en-us/library/x53a06bb.aspx).
+Before you can use a variable, you first must declare it. Every variable in C# must have a type, and can only hold values of that type. The C# syntax to declare a variable starts with the data type, follow by a space, then follow by the variable name (and the semi-colon if at the end of the line). Variable names must start with an alphabet letter, follow by any alpha-numeric characters or the underscore character. Variable names cannot contain any spaces, and cannot be the same as any of the [C# keywords](http://msdn.microsoft.com/en-us/library/x53a06bb.aspx).
 
 ```c#
 int houseNumber;

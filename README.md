@@ -6,4 +6,4 @@ the majority of the concepts covered in each lesson are applicable to other lang
 
 Lessons:
 
-1. [The Basics](01-the-basic.md)
+1. [The Basics](01-the-basics.md)

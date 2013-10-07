@@ -1,4 +1,4 @@
-C# Programming class
+C# Programming
 =====
 
 This class aims to teach programming to folks without computer science background. Even though the class uses C#,

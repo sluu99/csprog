@@ -10,5 +10,5 @@ Lessons:
 2. Decision Making: think like a programmer with flow-charts; if-else statements; switch statements.
 3. Debugging & Exercises: debugging with Visual Studio; exercises.
 4. Loops: while loops; for loops.
-5. Arrays
+5. Arrays: one dimensional arrays
 6. Sorting: bubble sort.

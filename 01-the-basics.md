@@ -48,7 +48,7 @@ To run this program, go to **Menu Debug -> Start Debugging**. You should see som
 ### 1.1.4 Code explanation
 For now, you can just focus on the 3 lines of code that start with `Console`. The code surrounding them will be explained to you in later lessons.
 
-As you might have guessed, the first two lines displays out "Hello world!" and the current date time to the console windows. Notice the `{0}` on the second line is replaced by `DateTime.Now`. You can have `WriteLine` output more than one value by using `{0}`, `{1}`, etc. 
+As you might have guessed, the first two lines displays "Hello world!" and the current date time to the console windows. Notice the `{0}` on the second line actually displays the value provided by `DateTime.Now`. You can have `WriteLine` output more than one value by using `{0}`, `{1}`, etc. 
 
 The third line of code waits for the user to press any key. Without this line, you won't be able too see the console window the program simply writes text to the console and quits immediately.
 

@@ -6,7 +6,7 @@ the majority of the concepts covered in each lesson are applicable to other lang
 
 Lessons:
 
-1. [The Basics](01-the-basics.md): console input, output, variables, and number arithmetic.
+1. [The Basics](01-the-basics.md): console input, output, variables, and numeric arithmetic.
 2. Decision Making: think like a programmer with flow-charts and if-else statements
 3. Debugging & Exercises: debugging with Visual Studio; exercises
 4. Loops: while loops; for loops

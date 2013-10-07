@@ -241,7 +241,7 @@ Create a project named **Lesson1ChristmasTree** which prints a Christmas tree to
 ```
 
 ### 1.6.2 Average
-Create a project named **Lesson1Average** which asks the user for three numbers and calculate the average:
+Create a project named **Lesson1Average** which asks the user for three numbers and calculates the average:
 
 ```
 Enter the first number: 6
@@ -251,6 +251,3 @@ Enter the third number: 2
 Average of 6, 3, and 2 is 3.66666666666667
 ```
 
-
-----------
-Steven Luu - Updated on 10/6/2013 11:47:03 PM 

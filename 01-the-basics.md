@@ -124,7 +124,7 @@ Like most languages, C# supports a wide range of math operations on numbers. Thi
 
 Note that just like math, multiplication, division, and modulus has precedence over addition and subtraction and you can use parentheses to indicate which operations should be performed first.
 
-One more thing that you need to keep in mind when doing math operation is the variable types. An integer variable cannot hold a floating point value, which means if you try to give an integer the result of `10 / 4`, the result will be "2" as the numbers after the decimal point will be stripped out.
+One more thing that you need to keep in mind when doing math operation is the variable types. An integer variable cannot hold a floating point value, which means if you try to give an integer the result of `10 / 4`, the result will be `2` and the numbers after the decimal point will be stripped out.
 
 ### 1.3.2 Example code
 

@@ -1,5 +1,3 @@
-### C# Programming
-
 # Lesson 1: The Basics
 
 This lesson will introduce to you the basic of programming via the C# language. The concepts in this lesson should be applicable to most programming languages on the market, not just specific to C#.

@@ -10,10 +10,10 @@ This lesson will introduce to you the basic of programming via the C# language. 
 To make programming with C# easier, you should have Microsoft .NET Framework and Visual Studio installed. This lesson will use [Microsoft .NET Framework 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653) and [Visual Studio Express 2012 for Windows Desktop](http://www.microsoft.com/visualstudio/eng/downloads#d-2012-express); both are freely available for download but you'll need a Live Account to use Visual Studio Express 2012 beyond 30 days.
 
 
-### 1.1.2 Create new project
-Time to launch Visual Studio for your first program! To create a new C# project, go to **Menu File -> New Project**.
+### 1.1.2 Creating a new project
+Time to launch Visual Studio for your first program! To create a new C# project, go to **Menu File → New Project**.
 
-* When the New Project dialog shows up, choose **Templates -> Visual C#** on the left and **Console Application** on the right.
+* When the New Project dialog shows up, choose **Templates → Visual C#** on the left and **Console Application** on the right.
 * Enter **Lesson1FirstProgram** for the name
 * Select an appropriate location to save this project.
 * For simplicity, **uncheck "Create directory for solution"** for now.
@@ -41,7 +41,7 @@ namespace Lesson1FirstProgram
 }
 ```
 
-To run this program, go to **Menu Debug -> Start Debugging**. You should see something similar to this:
+To run this program, go to **Menu Debug → Start Debugging**. You should see something similar to this:
 
 ![First Program Screenshot](screenshots/01/FirstProgram.png)
 
@@ -60,7 +60,7 @@ Notice the semi-colons at the end of these three lines. Because white-spaces are
 ## 1.2 Data Types and Variables
 
 ### 1.2.1 Data Types
-We can loosely describe a computer program as a list of computer instructions which are executed in order. Sometimes, it is useful to have the program "remember things" at an earlier point of the program so that you can use them later. In most programming languages, these things are called "variables." In C#, there are different types of variables. These different types are used to represent different values, such as an integer or an alphabet character. This table lists the common C# variable types (see the [C# Reference](http://msdn.microsoft.com/en-us/library/vstudio/bfft1t3c.aspx) for a complete list of C# value types):
+We can loosely describe a computer program as a list of computer instructions which are executed in order. Sometimes, it is useful to have the program "remember things" at an earlier point of the program so that you can use them later. In most programming languages, these things are called "variables." Each variable can hold a value of a particular type. In C#, there are different types of values, such as an integer or an alphabet character. This table lists the common C# value types (see the [C# Reference](http://msdn.microsoft.com/en-us/library/vstudio/bfft1t3c.aspx) for a complete list of C# value types):
 
 | Data Type | C# Notation | C# Literal Form | Description |
 | --------- | ----------- | --------------- | ----------- |

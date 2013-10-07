@@ -169,14 +169,16 @@ We'll get started with a simple program, which asks the user for his or her name
 
 Create a new project named **Lesson1Greetings** and enter this into the `Main` code-block:
 
-    string name;
-    
-    Console.Write("Please enter your name: ");
-    name = Console.ReadLine();
-    
-    Console.WriteLine("Greetings, {0}!", name);
-    
-    Console.ReadKey(true);
+```c#
+string name;
+
+Console.Write("Please enter your name: ");
+name = Console.ReadLine();
+
+Console.WriteLine("Greetings, {0}!", name);
+
+Console.ReadKey(true);
+```
 
 Running your program should look something like this:
 

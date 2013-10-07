@@ -220,7 +220,7 @@ In this program, I want to turn your attention to three things:
 
 1. The variable `userInput` has type `string`. As mentioned before, `Console.ReadLine` always returns a string, we need to have a string variable to hold the value that user typed. In C#, the string `"5"` is different from the integer `5`. Because of that, the number 5 that I entered is treated as value `"5"`
 2. `int.Parse` is used to convert a string to an integer.
-3. The variable `userInput` is re-used for the second input. Because the program immediately converts the user input to integer and stores it in the appropriate `int` variable, there is no need to have a different `string` variable for the second input. 
+3. The variable `userInput` is re-used for the second input. Because the program immediately converts the first user input to integer and stores it in the appropriate `int` variable, there is no need to have a different `string` variable for the second input. 
 
 
 ## 1.5 Summary

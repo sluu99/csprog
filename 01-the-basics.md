@@ -157,7 +157,7 @@ Your output should look like this:
 
 ![](screenshots/01/ArithmeticOutput.png)
 
-Something I want to point your attention to is the value of `f`. Even though it has a type of `float`, the output is still `2`. The reason behind that is when the code is executed, the right side of the equal sign is actually performing an integer operation, giving `f` the value of `2`. In reality, because `f` is of type `float`, its value is approximately `2.0` but `WriteLine` strips out the `.0` part before displaying the value in the console window.
+Something I want to point your attention to is the value of `f`. Even though it has a type of `float`, the output is still `2`. The reason behind that is when the code is executed, the right side of the equal sign is actually performing an integer operation, yielding the value of `2`. Because `f` is a `float` variable, the value `2` is then converted to approximately `2.0F` then assigned to `f`. However, `WriteLine` strips out trailing zeros, hence you only see `2` in the output.
 
 ## 1.4 Console Input
 Now that you know all about C# variables and data types, let's make our programs more useful by letting users enter values that we can work with.

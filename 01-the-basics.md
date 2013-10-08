@@ -46,7 +46,7 @@ To run this program, go to **Menu Debug → Start Debugging**. You should see so
 ### 1.1.4 Code explanation
 For now, you can just focus on the 3 lines of code that start with `Console`. The code surrounding them will be explained to you in later lessons.
 
-As you might have guessed, the first two lines displays "Hello world!" and the current date time to the console windows. Notice the `{0}` on the second line actually displays the value provided by `DateTime.Now`. You can have `WriteLine` output more than one value by using `{0}`, `{1}`, etc. 
+As you might have guessed, the first two lines displays "Hello world!" and the current date time to the console windows. Notice the `{0}` on the second line actually displays the value provided by `DateTime.Now`. There will be more example of how `{0}` works in *section 1.4.2*. 
 
 The third line of code waits for the user to press any key. Without this line, you won't be able too see the console window. The program simply writes text to the console and quits immediately.
 
@@ -95,7 +95,7 @@ int houseNumber;
 ```
 
 
-The equal sign operator can be used to give a variable some values.
+The equal sign operator can be used to assign a variable some values.
 
 ```c#
 houseNumber = 10;

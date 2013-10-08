@@ -48,7 +48,7 @@ For now, you can just focus on the 3 lines of code that start with `Console`. Th
 
 As you might have guessed, the first two lines displays "Hello world!" and the current date time to the console windows. Notice the `{0}` on the second line actually displays the value provided by `DateTime.Now`. There will be more of how `{0}` works in other examples. 
 
-The third line of code waits for the user to press any key. Without this line, you won't be able too see the console window. The program simply writes text to the console and quits immediately.
+The third line of code pauses the program until the user presses a key. Without this line, you won't be able too see the console window; the program would simply writes text to the console and quits immediately.
 
 Notice the semi-colons at the end of these three lines. Because white-spaces aren't meaningful in C#, the semi-colons let C# know that it is the end of a code line.
 

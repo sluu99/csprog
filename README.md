@@ -20,7 +20,7 @@ the majority of the concepts covered in each lesson are applicable to other lang
 It was a hard choice when I had to decide on what language to use for teaching programming, but at the end I belive C# is the right choice. The reasons are:
 
 * C# is a relatively clean language. I was also considering Python for its readability, but didn't want newcomers to have to deal with the intepreter freaking out on white-spaces vs tabs indentation.
-* C# is a static-typed and strongly-typed language. I want to cover data types in this class as well as having the compiler aids the students when dealing with variables.
+* C# is a statically-typed and strongly-typed language. I want to cover data types in this class as well as having the compiler aids the students when dealing with variables.
 * I plan to create cool UI for class exercises where the students only have to implement the logic. Using C# would be a lot easier than having to setup GLUT or Tk.
 
 ### C# limitations: 

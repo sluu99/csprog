@@ -82,6 +82,6 @@ Console.WriteLine("Average of {0}, {1}, and {2} is {3}", num1, num2, num3, avera
 Console.ReadKey(true);
 ```
 This is the core logic of the exercise.
-* On the first line of code, we add the first 3 numbers together, and then divide them by 3. Notice that I had to specify `3.0D` to make it a `double` operation. If I were to only specify `3`, the whole operation would be considered an integer operations and anything after the decimal point would be stripped out. Also notice the operator precedence.
+* On the first line of code, we add the first 3 numbers together, and then divide them by 3. Notice that I had to specify `3.0D` to make it a `double` operation. If I were to only specify `3`, the whole operation would be considered an integer operation and anything after the decimal point would be stripped out. Also notice the operator precedence.
 * The next line of code uses `{0}`, `{1}`, etc. to write out the four numbers. Remember, the number starts with zero.
 * As usual, we end the the code with `Console.ReadKey` to prevent the program from quitting immediately. 

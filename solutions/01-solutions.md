@@ -1,6 +1,6 @@
 ## Lesson 1 Exercise solution
 
-The actual projects for these solutions can be found in the `code` folder.
+The projects for these solutions can be found in the `code` folder.
 
 ### Solution for 1.6.1 Christmas tree
 
@@ -8,7 +8,7 @@ The purpose for this exercise was to get you comfortable with working in Visual 
 
 **Review:** to create a new project in Visual Studio, go to **Menu File → New Project**. More details can be found in section *1.1.2*.
 
-The actual code in `Program.cs` for this solution:
+The code in `Program.cs` for this solution:
 
 ```c#
 using System;

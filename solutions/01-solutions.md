@@ -45,7 +45,7 @@ Console.WriteLine("*********");
 Console.WriteLine("    *    ");
 ```
 
-This is a perfectly fine solution, too. Yes, the later solution would actually print out those extra white-spaces at the end, but the difference in performance is negligible in this case. Programmers often have to decide the trade offs between sacrificing a little performance to make their code more readable, understandable, and maintainable. Clever code is not necessary good code.
+This is a perfectly fine solution, too. Yes, the later solution would actually print out those extra white-spaces at the end, but the difference in performance is negligible in this case. Programmers often have to decide to trade off little performance to make their code more readable, understandable, and maintainable. Clever code is not necessary good code.
 
 ### Solution for 1.6.2 Average
 
@@ -70,7 +70,7 @@ num1 = int.Parse(userInput);
 ```
 These three lines of code asks the user to enter a number.
 * Hopefully you're familiar with `Console.Write` and `Console.WriteLine` at this point.
-* We use `Console.ReadLine` to get what the user typed. This function always gives us a string, which is assigned to `userInput`.
+* We use `Console.ReadLine` to get what the user typed. This function always gives us a `string`, which is assigned to `userInput`.
 * Next, we use `int.Parse` to convert a string into an integer and assigns it to the variable `num1`.
 
 The code to get the 2nd and 3rd number is very similar.

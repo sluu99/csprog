@@ -45,7 +45,7 @@ Console.WriteLine("*********");
 Console.WriteLine("    *    ");
 ```
 
-This is a perfectly fine solution, too. Yes, the later solution would actually print out those extra white-spaces at the end, but the different in performance is negligible in this case. Programmers often have to decide the trade offs between sacrificing a little performance to make their code more readable, understandable, and maintainable. Clever code is not necessary good code.
+This is a perfectly fine solution, too. Yes, the later solution would actually print out those extra white-spaces at the end, but the difference in performance is negligible in this case. Programmers often have to decide the trade offs between sacrificing a little performance to make their code more readable, understandable, and maintainable. Clever code is not necessary good code.
 
 ### Solution for 1.6.2 Average
 

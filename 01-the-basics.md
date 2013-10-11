@@ -1,19 +1,17 @@
-### C# Programming
-
 # Lesson 1: The Basics
 
-This lesson will introduce to you the basic of programming via the C# languages. The concepts in this lesson should be applicable to most programming languages on the market, not just specific to C#.
+This lesson will introduce to you the basic of programming via the C# language. The concepts in this lesson should be applicable to most programming languages on the market, not just specific to C#.
 
 ## 1.1 Your first program
 
 ### 1.1.1 Setup your development environment
-To make programming with C# easier, you should have Microsoft .NET Framework and Visual Studio installed. This lesson will use [Microsoft .NET Framework 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653) and [Visual Studio Express 2012 for Windows Desktop](http://www.microsoft.com/visualstudio/eng/downloads#d-2012-express); both are freely available for download but you'll need a Live Account to use Visual Studio Express 2012 beyond 30 days.
+To make programming with C# easier, you should have Microsoft .NET Framework and Visual Studio installed. This course will use [Microsoft .NET Framework 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653) and [Visual Studio Express 2012 for Windows Desktop](http://www.microsoft.com/visualstudio/eng/downloads#d-2012-express); both are freely available for download but you'll need a (free) Live Account to use Visual Studio Express 2012 beyond 30 days.
 
 
-### 1.1.2 Create new project
-Time to launch Visual Studio for your first program! To create a new C# project, go to **Menu File -> New Project**.
+### 1.1.2 Creating a new project
+Time to launch Visual Studio for your first program! To create a new C# project, go to **Menu File → New Project**.
 
-* When the New Project dialog shows up, choose **Templates -> Visual C#** on the left and **Console Application** on the right.
+* When the New Project dialog shows up, choose **Templates → Visual C#** on the left and **Console Application** on the right.
 * Enter **Lesson1FirstProgram** for the name
 * Select an appropriate location to save this project.
 * For simplicity, **uncheck "Create directory for solution"** for now.
@@ -41,16 +39,16 @@ namespace Lesson1FirstProgram
 }
 ```
 
-To run this program, go to **Menu Debug -> Start Debugging**. You should see something similar to this:
+To run this program, go to **Menu Debug → Start Debugging**. You should see something similar to this:
 
 ![First Program Screenshot](screenshots/01/FirstProgram.png)
 
 ### 1.1.4 Code explanation
 For now, you can just focus on the 3 lines of code that start with `Console`. The code surrounding them will be explained to you in later lessons.
 
-As you might have guessed, the first two lines displays "Hello world!" and the current date time to the console windows. Notice the `{0}` on the second line actually displays the value provided by `DateTime.Now`. You can have `WriteLine` output more than one value by using `{0}`, `{1}`, etc. 
+As you might have guessed, the first two lines display "Hello world!" and the current date time to the console windows. Notice the `{0}` on the second line actually displays the value provided by `DateTime.Now`. There will be more of how `{0}` works in other examples.
 
-The third line of code waits for the user to press any key. Without this line, you won't be able too see the console window. The program simply writes text to the console and quits immediately.
+The third line of code pauses the program until the user presses a key. Without this line, you won't be able to see the console window; the program would simply writes text to the console and quits immediately.
 
 Notice the semi-colons at the end of these three lines. Because white-spaces aren't meaningful in C#, the semi-colons let C# know that it is the end of a code line.
 
@@ -60,7 +58,7 @@ Notice the semi-colons at the end of these three lines. Because white-spaces are
 ## 1.2 Data Types and Variables
 
 ### 1.2.1 Data Types
-We can loosely describe a computer program as a list of computer instructions which are executed in order. Sometimes, it is useful to have the program "remember things" at an earlier point of the program so that you can use them later. In most programming languages, these things are called "variables." In C#, there are different types of variables. These different types are used to represent different values, such as an integer or an alphabet character. This table lists the common C# variable types (see the [C# Reference](http://msdn.microsoft.com/en-us/library/vstudio/bfft1t3c.aspx) for a complete list of C# value types):
+We can loosely describe a computer program as a list of computer instructions which are executed in order. Sometimes, it is useful to have the program "remember things" at an earlier point of the program so that you can use them later. In most programming languages, these things are called "variables." Each variable can hold a value of a particular type. In C#, there are different types of values, such as an integer or an alphabet character. This table lists the common C# value types (see the [C# Reference](http://msdn.microsoft.com/en-us/library/vstudio/bfft1t3c.aspx) for a complete list of C# value types):
 
 | Data Type | C# Notation | C# Literal Form | Description |
 | --------- | ----------- | --------------- | ----------- |
@@ -90,14 +88,14 @@ static void Main(string[] args)
 Your console window should display "My name is Bob and my favorite number is 18". 
 
 ### 1.2.3 Code explanation
-Before you can use a variable, you first must declare it. Every variable in C# must have a type. The C# syntax to declare a variable starts with the data type, follow by a space, follow by the variable name (and the semi-colon if at the end of the line). Variable names must start with an alphabet letter, follow by any alpha-numeric characters or the underscore character. Variable names cannot contain any spaces, and cannot be the same as any of the [C# keywords](http://msdn.microsoft.com/en-us/library/x53a06bb.aspx).
+Before you can use a variable, you first must declare it. Every variable in C# must have a type, and can only hold values of that type. The C# syntax to declare a variable starts with the data type, followed by a space, then followed by the variable name (and the semi-colon if at the end of the line). Variable names must start with an alphabet letter, follow by any alpha-numeric characters or the underscore character. Variable names cannot contain any spaces, and cannot be the same as any of the [C# keywords](http://msdn.microsoft.com/en-us/library/x53a06bb.aspx).
 
 ```c#
 int houseNumber;
 ```
 
 
-The equal sign operator can be used to give a variable some values.
+The equal sign operator can be used to assign a variable some values.
 
 ```c#
 houseNumber = 10;
@@ -126,7 +124,7 @@ Like most languages, C# supports a wide range of math operations on numbers. Thi
 
 Note that just like math, multiplication, division, and modulus has precedence over addition and subtraction and you can use parentheses to indicate which operations should be performed first.
 
-One more thing that you need to keep in mind when doing math operation is the variable types. An integer variable cannot hold a floating point value, which means if you try to give an integer the result of `10 / 4`, the result will be "2" as the numbers after the decimal point will be stripped out.
+One more thing that you need to keep in mind when doing math operation is the variable types. An integer variable cannot hold a floating point value, which means if you try to give an integer the result of `10 / 4`, the result will be `2` and the numbers after the decimal point will be stripped out.
 
 ### 1.3.2 Example code
 
@@ -142,14 +140,14 @@ float f = 10 / 4;
 float g = 10.0F / 4;
 float h = 10.0F / 4.0F;
 
-Console.WriteLine("a={0}",a);
-Console.WriteLine("b={0}",b);
-Console.WriteLine("c={0}",c);
-Console.WriteLine("d={0}",d);
-Console.WriteLine("e={0}",e);
-Console.WriteLine("f={0}",f);
-Console.WriteLine("g={0}",g);
-Console.WriteLine("h={0}",h);
+Console.WriteLine("a={0}", a);
+Console.WriteLine("b={0}", b);
+Console.WriteLine("c={0}", c);
+Console.WriteLine("d={0}", d);
+Console.WriteLine("e={0}", e);
+Console.WriteLine("f={0}", f);
+Console.WriteLine("g={0}", g);
+Console.WriteLine("h={0}", h);
 
 Console.ReadKey(true);
 ```
@@ -159,7 +157,7 @@ Your output should look like this:
 
 ![](screenshots/01/ArithmeticOutput.png)
 
-Something I want to point your attention to is the value of `f`. Even though it has a type of `float`, the output is still `2`. The reason behind that is when the code is executed, the right side of the equal sign is actually performing an integer operation, giving `f` the value of `2`. In reality, because `f` is of type `float`, its value is approximately `2.0` but `WriteLine` strips out the `.0` part before displaying the value in the console window.
+I want to point your attention to the value of `f`. Even though it has a type of `float`, the output is still `2`. The reason behind that is when the code is executed, the right side of the equal sign is actually performing an integer operation, yielding the value of `2`. Because `f` is a `float` variable, the value `2` is then converted to approximately `2.0F` then assigned to `f`. However, `WriteLine` strips out trailing zeros, hence you only see `2` in the output.
 
 ## 1.4 Console Input
 Now that you know all about C# variables and data types, let's make our programs more useful by letting users enter values that we can work with.
@@ -222,7 +220,7 @@ In this program, I want to turn your attention to three things:
 
 1. The variable `userInput` has type `string`. As mentioned before, `Console.ReadLine` always returns a string, we need to have a string variable to hold the value that user typed. In C#, the string `"5"` is different from the integer `5`. Because of that, the number 5 that I entered is treated as value `"5"`
 2. `int.Parse` is used to convert a string to an integer.
-3. The variable `userInput` is re-used for the second input. Because the program immediately converts the user input to integer and stores it in the appropriate `int` variable, there is no need to have a different `string` variable for the second input. 
+3. The variable `userInput` is re-used for the second input. Because the program immediately converts the first user input to integer and stores it in the appropriate `int` variable, there is no need to have a different `string` variable for the second input. 
 
 
 ## 1.5 Summary

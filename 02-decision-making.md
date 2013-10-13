@@ -73,49 +73,30 @@ Let's interpret this chart:
 4. The program checks if `X` is an even number, then print out the corresponding message.
 6. The program ends.
 
-## 2.2 Code comments
+## 2.2 Exercises
+For each the problems below, design a complete flowchart for the program.
 
-If you view the source code of some larger programs, you'd often see comments in the code. Comments are used to document the intent of the programmer, note why a piece of code is written in certain way. **Comments are very important, because a piece of code is often revisited and maintained.** Comments are usually in English (or whichever natural language your team speaks) and they are ignored when the program is built and executed. There are two ways of writing comments in C#:
+### 2.2.1 Weekday
+Have the user enter an integer, and print out the corresponding weekday:
 
-### 2.2.1 Single-line comment
-On each line of C# code, anything after two slashes `//` is considered comment -- the only exception is when they are part of a string (inside to double-quote symbols). For example:
+* 1 for Sunday
+* 2 for Monday
+* . . .
+* 6 for Friday
+* 7 for Saturday
 
-```c#
-static void Main(string args[])
-{
-	Console.WriteLine("// are used for single-line comments "); // ignored
-}
-```
+If the number is outside that range (1 to 7) then print out an error message.
 
-```c#
-static void Main(string args[])
-{
-	int x;
-	float half;
-	
-	half = x / 2.0F; // need to divide by 2.0F to make it a float operation
-}
-```
+### 2.2.2 FizzBuzz
+Have the user enter an integer.
 
-### 2.2.2 Contained or Multi-line comment
-Even though single-line comments are used very frequently, there are times when it's not convenient to use them. The other alternative is to put your comment between `/*` and `*/`. 
+* If the number is divisible by 3 then print out `Fizz` (inside the diamond just say "Divisible by 3").
+* If the number is divisible by 5 then print out `Buzz`.
+* If the number is divisible by both 3 and 5 then print out `FizzBuzz`.
 
-In the following example, we span our comment among multiple lines to note the author and the date which the code is written:
+### 2.2.3 Cashier
+This program will simulate a simple cashier. The cashier will ask user for the bill total, and the amount that the customer has paid (for learning purpose, use integer input – the cashier will enter the amount in pennies).
 
-```c#
-static void Main(string args[])
-{
-	/*
-	Written by John Doe
-	Date: December 1, 2011
-	*/
-}
-```
-
-There are also times when you only want to put comment on a small part of the line. The following example uses `/*` and `*/` to contain the comments inside a line.
-
-```c#
-static void Main(string args[])
-{
-   Console.WriteLine("It is now {0}", DateTime.Now /* {0} */);
-}
+* If the customer paid the exact amount then print out "Customer paid exact amount."*
+* If the customer paid more than the bill then print out the amount that we owe the customer (e.g. "We owe the customer 135 cents.")
+* If the customer paid less than the bill then print out the addition amount the customer owes (e.g. "The customer needs to pay 25 cents more.")

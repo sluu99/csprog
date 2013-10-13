@@ -36,3 +36,29 @@ Example of a program which prints out "Hello world!" to the console:
 ![Hello World Flowchart](screenshots/02/HelloWorldFlowchart.png)
 
 In this case, even though the program outputs to the console window, the flowchart didn't get into the specifics. Flowcharts capture ideas which can be implemented in different programming languages and systems. However, there are cases where it is necessary to get specific, such as differentiating between writing to the console window and writing to a file, in the same program.
+
+### 2.1.3 Actions
+Rectangles are used to describe actions which don't interact with users (not I/O). 
+
+Example of an action which increments the value `X` by 1:
+
+![Increment X](screenshots/02/ActionIncX.png)
+
+Inside a complete program:
+
+![Complete increment X flowchart](screenshots/02/CompleteIncXFlowchart.png)
+
+### 2.1.4 Conditions
+So far, all the programs we have written or designed just follow one straight path from the beginning to the end. Most programs are more complicated than that – they often have to decide if one action should be taken rather than another. To know which actions should be taken, a program would evaluate if some condition is satisfied. 
+
+In the world of flowcharts, conditions are usually represented by a diamond shape, with two arrows pointing out. One arrow is annotated with a **"Yes"** or **"Y"**. The other arrow is annotated with a **"No"** or **"N"**. The program will go with the "Yes" path if the condition inside the diamond is satisfied. Respectively, it will go with the "No" path if the condition is not satisfied.
+
+The following example represents a condition which the value of `X` is less than 5:
+
+![X less than 5 condition](screenshots/02/XLessThan5Cond.png)
+
+Inside the context of a program:
+
+![Complete less than 5 flowchart](screenshorts/02/CompleteLessThan5Flowchart.png)
+
+This program asks the user for an integer number. Based on whether the number is less than 5 or greater than 5, it will print out an appropriate message.

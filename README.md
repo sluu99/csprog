@@ -9,12 +9,13 @@ the majority of the concepts covered in each lesson are applicable to other lang
 ### Lessons:
 
 1. [The Basics](01-the-basics.md): console input, output; data types; variables; numeric arithmetic.
-2. [Decision Making](02-decision-making.md): think like a programmer with flow-charts; if-else statements; switch statements; code comments.
-3. Debugging & Exercises: debugging with Visual Studio; exercises.
-4. Loops: while loops; for loops.
-5. Functions: declaring and calling functions; function parameters.
-6. Arrays: one dimensional arrays.
-7. Sorting: bubble sort.
+2. [Decision Making](02-decision-making.md): think like a programmer with flow-charts.
+3. Decision Making (cont.): if-else statements; code comment.
+4. Debugging & Exercises: debugging with Visual Studio; exercises.
+5. Loops: while loops; for loops.
+6. Functions: declaring and calling functions; function parameters.
+7. Arrays: one dimensional arrays.
+8. Sorting: bubble sort.
 
 ### Why C#?
 It was a hard choice when I had to decide on what language to use for teaching programming, but at the end I belive C# is the right choice. The reasons are:

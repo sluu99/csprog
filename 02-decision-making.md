@@ -19,7 +19,7 @@ Notice that an arrow is used to guide the direction of which the program is exec
 > There aren't hard-golden rules to the shape of different pieces inside a flowchart. However, there are conventions that most people follow. You might occasionally see flowcharts that start with circles instead of ovals. Same goes for the other shapes in the rest of this lesson.
 
 ### 2.1.2 Input and Output (I/O)
-In the last lesson, you have written programs which output to the console window and take user input. Within a flowchart, **parallelograms** (or slanted rectangles) are often used to represent I/O operations.
+In lesson one, you have written programs which output to the console window and take user input. Within a flowchart, **parallelograms** (or slanted rectangles) are often used to represent I/O operations.
 
 Example of an output parallelogram:
 

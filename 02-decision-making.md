@@ -59,6 +59,6 @@ The following example represents a condition which the value of `X` is less than
 
 Inside the context of a program:
 
-![Complete less than 5 flowchart](screenshorts/02/CompleteLessThan5Flowchart.png)
+![Complete less than 5 flowchart](screenshots/02/CompleteLessThan5Flowchart.png)
 
 This program asks the user for an integer number. Based on whether the number is less than 5 or greater than 5, it will print out an appropriate message.

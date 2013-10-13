@@ -9,8 +9,6 @@ For computer programs, their "blueprints" can be represented by flowcharts. Larg
 
 > In reality, flowcharts aren't used as often as one might think. Seasoned programmer can form ideas in their heads and start coding. However, it is important to get into the habit of thinking in terms of how a program executes.
 
-Let's suppose we want to design a program which will **have the user input an integer. If the number is higher than 10 then print the message "This number is larger than 10", otherwise let the user know if the number is odd or even.**
-
 ### 2.1.1 The beginning and The end
 Every program has a beginning and an end – as do flowcharts. A complete flowchart often start with the word **"Begin"** inside an oval shape and ends with the word **"End"** inside another oval shape. To a program which does absolutely nothing, the flowchart would look like this:
 
@@ -62,3 +60,17 @@ Inside the context of a program:
 ![Complete less than 5 flowchart](screenshots/02/CompleteLessThan5Flowchart.png)
 
 This program asks the user for an integer number. Based on whether the number is less than 5 or greater than 5, it will print out an appropriate message.
+
+### 2.1.5 Example
+
+Let's suppose we want to design a program which will **have the user input an integer. If the number is higher than 10 then print the message "This number is larger than 10". Either way, let the user know if the number is odd or even.**
+
+![Full example flowchart](screenshots/02/FullExampleFlowchart.png)
+
+Let's interpret this chart:
+
+1. The program begins 
+2. The user is asked for an integer `X`. 
+3. Then the program checks if `X` is greater than `10`. If it's true then the program prints a message. Because we are going to the next part of the program either way, the `Output "X larger than 10"` (from the "Yes" path) points back to the "No" path. 
+4. The program checks if `X` is an even number, then print out the corresponding message.
+6. The program ends.

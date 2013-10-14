@@ -103,4 +103,4 @@ This program will simulate a simple cashier. The cashier will ask user for the b
 
 
 ### 2.2.4 Largest of three
-This program will ask the user for 3 integers, then the program will print out the largest out of those 3 numbers.
+This program will ask the user for 3 integers `X`, `Y`, and `Z`, then the program will print out the largest out of those 3 numbers.

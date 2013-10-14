@@ -100,3 +100,7 @@ This program will simulate a simple cashier. The cashier will ask user for the b
 * If the customer paid the exact amount then print out "Customer paid exact amount."*
 * If the customer paid more than the bill then print out the amount that we owe the customer (e.g. "We owe the customer 135 cents.")
 * If the customer paid less than the bill then print out the addition amount the customer owes (e.g. "The customer needs to pay 25 cents more.")
+
+
+### 2.2.4 Largest of three
+This program will ask the user for 3 integers, then the program will print out the largest out of those 3 numbers.

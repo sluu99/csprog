@@ -78,3 +78,69 @@ For the rest of this course, I'll always enclose the body between curly braces t
 
 ### 3.1.3 The else statement
 So far we have only seen the `if` statement (or the *Yes* branch of the diamond). This section will introduce to us the `else` statement, the *No* branch of the diamond.
+
+```c#
+if (x > 5)
+{
+	Console.WriteLine("Greater than 5");
+}
+else
+{
+	Console.WriteLine("Less than or equal to 5");
+}
+```
+
+### 3.1.4 Other examples
+
+```c#
+if (x > 5)
+{
+	Console.WriteLine("Greater than 5");
+}
+else
+{
+	if (x < 5)
+	{
+		Console.WriteLine("Less than 5");
+	}
+	else
+	{
+		Console.WriteLine("Equals to 5");
+	}
+}
+```
+
+The example above can be written in a more condensed way by removing the curly braces of the first else branch:
+
+```c#
+if (x > 5)
+{
+	Console.WriteLine("Greater than 5");
+}
+else
+	if (x < 5)
+	{
+		Console.WriteLine("Less than 5");
+	}
+	else
+	{
+		Console.WriteLine("Equals to 5");
+	}
+```
+
+Then remove the blank line:
+
+```c#
+if (x > 5)
+{
+	Console.WriteLine("Greater than 5");
+}
+else if (x < 5)
+{
+	Console.WriteLine("Less than 5");
+}
+else
+{
+	Console.WriteLine("Equals to 5");
+}
+```

@@ -272,9 +272,47 @@ When using the `switch` statement, there important things to keep in mind are:
 
 1. The `case` keyword: as you can see in the example, `case` dictates the different values we're interested in.
 2. The `break` keyword: this is usually something that beginners forget when using `switch` statements. The `break` keyword stops any further evaluations once a value matches.
-3. The `default` keyword: as you can guess, `default` will be used when none of the specific values match. Notice that `default` does *not* have the `break` keyword and it's always at the end of the cases.
+3. The `default` keyword: as you can guess, `default` will be used when none of the specific values match. Notice that `default` does *not* have the `break` keyword and it's always at the end of the cases. The `default` branch is **optional**.
 
 
-## 3.6 Exercises
+## 3.6 Boolean operators
+
+Let's have a different example: the user will enter the month (0 to 11, inclusive). The program will print out how many days there are in that month.
+
+First, let's use the good old `if` statement:
+
+```c#
+int month;
+// get user input
+
+month = month + 1; // increment one for human consumption
+
+if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+{
+	Console.WriteLine("This month has 31 days");
+}
+else if (month == 2) 
+{
+	Console.WriteLine("This month has 28 or 29 days");
+}
+else 
+{
+	Console.WriteLine("This month has 30 days");
+}
+
+```
+
+Something new that in this example is the `||` operator (two pipes). It stands for "or." The first if statement should read "if month equals to one, or three, ..., or twelve." Inside that whole expression, only one of the comparisons needs to be `true` to make the whole expression true.
+
+Two other interesting boolean operators that you'll explore in the exercises are the `&&` "and" operator and the `!` "negate/not" operator. Keep this [truth table](http://en.wikipedia.org/wiki/Truth_table#Binary_operations) in mind as a reference:
+
+| `a` | `b` | `a || b` | `a && b` | `!a` |
+| --- | --- | -------- | -------- | ---- |
+|  T  |  T  |    T     |    T     |   F  |
+
+
+
+
+## 3.7 Exercises
 
 Write the C# programs for the flowcharts from lesson 2 exericses.

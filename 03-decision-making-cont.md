@@ -352,14 +352,14 @@ Notice that the switch statement is evaluating `month + 1`. It does not actually
 
 2. Ask the user to enter a year and print a message indicating if that year is a leap year.
 
-3. Ask the user to enter an amount of money in pennies (cents). Exchange the money for the user using the largest dolar bills possible. These bills and coins are available to you: 100, 50, 10, 5, 2, 1, quarters, dimes, nickles, pennies. Example: 
+3. Ask the user to enter an amount of money in pennies (cents). Exchange the money for the user using the largest dolar bills possible. These bills and coins are available to you: 100, 50, 20, 10, 5, 2, 1, quarters, dimes, nickles, pennies. Example: 
 
 ```
 Please enter an amount of money in pennies: 24011
 That amount can be represented using:
 
 2 one-hundred-dolar bill(s)
-4 ten-dollar bill(s)
+2 twenty-dollar bill(s)
 1 dime(s)
 1 cent(s)
 ```

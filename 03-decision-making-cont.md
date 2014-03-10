@@ -143,6 +143,138 @@ else
 }
 ```
 
-## 3.5 Exercises
+## 3.5 The Switch statement
+
+While `if` statements are powerful, sometimes things can get tedious when the program has to check one single variable for many different conditions. Consider the following example:
+
+```c#
+int weekDay;
+// get user input
+
+if (weekDay == 0)
+{
+	Console.WriteLine("Sunday");
+}
+else if (weekDay == 1)
+{
+	Console.WriteLine("Monday");
+}
+else if (weekDay == 2)
+{
+	Console.WriteLine("Tuesday");
+}
+else if (weekDay == 3)
+{
+	Console.WriteLine("Wednesday");
+}
+else if (weekDay == 4)
+{
+	Console.WriteLine("Thursday");
+}
+else if (weekDay == 5)
+{
+	Console.WriteLine("Friday");
+}
+else if (weekDay == 6)
+{
+	Console.WriteLine("Saturday");
+}
+else
+{
+	Console.WriteLine("Unknown");
+}
+```
+
+Okay. So maybe we don't need to repeat Console.WriteLine every time:
+
+```c#
+int weekDay;
+// get user input
+string name;
+
+if (weekDay == 0)
+{
+	name = "Sunday";
+}
+else if (weekDay == 1)
+{
+	name = "Monday";
+}
+else if (weekDay == 2)
+{
+	name = "Tuesday";
+}
+else if (weekDay == 3)
+{
+	name = "Wednesday";
+}
+else if (weekDay == 4)
+{
+	name = "Thursday";
+}
+else if (weekDay == 5)
+{
+	name = "Friday";
+}
+else if (weekDay == 6)
+{
+	name = "Saturday";
+}
+else
+{
+	name = "Unknown";
+}
+
+Console.WriteLine(name);
+
+```
+
+The example above is pretty straight forward, but as you can can see, it's a lot of repetitive code. This is when `switch` becomes useful:
+
+```c#
+int weekDay;
+// get uesr input
+
+string name;
+
+switch (weekDay)
+{
+	case 0: 
+		name = "Sunday";
+		break;
+	case 1: 
+		name = "Monday";
+		break;
+	case 2: 
+		name = "Tuesday";
+		break;
+	case 3: 
+		name = "Wednesday";
+		break;
+	case 4: 
+		name = "Thursday";
+		break;
+	case 5: 
+		name = "Friday";
+		break;
+	case 6: 
+		name = "Saturday";
+		break;
+	default:
+		name = "Unknown";
+}
+
+Console.WriteLine(name);
+
+```
+
+When using the `switch` statement, there important things to keep in mind are:
+
+1. The `case` keyword: as you can see in the example, `case` dictates the different values we're interested in.
+2. The `break` keyword: this is usually something that beginners forget when using `switch` statements. The `break` keyword stops any further evaluations once a value matches.
+3. The `default` keyword: as you can guess, `default` will be used when none of the specific values match. Notice that `default` does *not* have the `break` keyword and it's always at the end of the cases.
+
+
+## 3.6 Exercises
 
 Write the C# programs for the flowcharts from lesson 2 exericses.

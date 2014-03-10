@@ -306,13 +306,59 @@ Something new that in this example is the `||` operator (two pipes). It stands f
 
 Two other interesting boolean operators that you'll explore in the exercises are the `&&` "and" operator and the `!` "negate/not" operator. Keep this [truth table](http://en.wikipedia.org/wiki/Truth_table#Binary_operations) in mind as a reference:
 
-| `a` | `b` | `a || b` | `a && b` | `!a` |
-| --- | --- | -------- | -------- | ---- |
-|  T  |  T  |    T     |    T     |   F  |
+```
+| a | b | a || b | a && b | !a |
+| - | - | ------ | ------ | -- |
+| T | T |    T   |    T   | F  |
+| T | F |    T   |    F   | F  |
+| F | T |    T   |    F   | T  |
+| F | F |    F   |    F   | T  |
+```
 
+The same example using `witch` statement:
 
+```c#
+int month;
+// get user input
+
+switch (month + 1)
+{
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
+		Console.WriteLine("This month has 31 days");
+		break;
+	case 2:
+		Console.WriteLine("Ths month has 28 or 29 days");
+		break;
+	default:
+		Console.WriteLine("This month has 30 days");
+}
+
+```
+
+Notice that the switch statement is evaluating `month + 1`. It does not actually change the value of the variable `month` like the previous example. You can also see that the different cases are stacked together.
 
 
 ## 3.7 Exercises
 
-Write the C# programs for the flowcharts from lesson 2 exericses.
+1. Write the C# programs for the flowcharts from lesson 2 exericses.
+
+2. Ask the user to enter a year and print a message indicating if that year is a leap year.
+
+3. Ask the user to enter an amount of money in pennies (cents). Exchange the money for the user using the largest dolar bills possible. These bills and coins are available to you: 100, 50, 10, 5, 2, 1, quarters, dimes, nickles, pennies. Example: 
+
+```
+Please enter an amount of money in pennies: 24011
+That amount can be represented using:
+
+2 one-hundred-dolar bill(s)
+4 ten-dollar bill(s)
+1 dime(s)
+1 cent(s)
+```
+

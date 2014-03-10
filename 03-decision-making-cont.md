@@ -262,6 +262,7 @@ switch (weekDay)
 		break;
 	default:
 		name = "Unknown";
+		break;
 }
 
 Console.WriteLine(name);
@@ -272,7 +273,7 @@ When using the `switch` statement, there important things to keep in mind are:
 
 1. The `case` keyword: as you can see in the example, `case` dictates the different values we're interested in.
 2. The `break` keyword: this is usually something that beginners forget when using `switch` statements. The `break` keyword stops any further evaluations once a value matches.
-3. The `default` keyword: as you can guess, `default` will be used when none of the specific values match. Notice that `default` does *not* have the `break` keyword and it's always at the end of the cases. The `default` branch is **optional**.
+3. The `default` keyword: as you can guess, `default` will be used when none of the specific values match. Notice that `default` does *not* have the `break` keyword and it's always at the end of the cases.
 
 
 ## 3.6 Boolean operators
@@ -337,6 +338,7 @@ switch (month + 1)
 		break;
 	default:
 		Console.WriteLine("This month has 30 days");
+		break;
 }
 
 ```

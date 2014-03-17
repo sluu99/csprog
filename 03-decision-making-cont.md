@@ -307,14 +307,7 @@ Something new that in this example is the `||` operator (two pipes). It stands f
 
 Two other interesting boolean operators that you'll explore in the exercises are the `&&` "and" operator and the `!` "negate/not" operator. Keep this [truth table](http://en.wikipedia.org/wiki/Truth_table#Binary_operations) in mind as a reference:
 
-```
-| a | b | a || b | a && b | !a |
-| - | - | ------ | ------ | -- |
-| T | T |    T   |    T   | F  |
-| T | F |    T   |    F   | F  |
-| F | T |    T   |    F   | T  |
-| F | F |    F   |    F   | T  |
-```
+![Truth Table](screenshots/03/truth-table.png)
 
 The same example using `witch` statement:
 

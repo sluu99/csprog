@@ -18,7 +18,7 @@ Think about it as a mechanism to **name** a block of code
 and we can always execute that block of code by calling its names.
 
 
-## 4.2 "Void" functions
+## 4.2 "void" functions
 You may not know this, but you have already seen a function. Let's revisit our "Hello world" program:
 
 ```c#

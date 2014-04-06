@@ -138,3 +138,15 @@ Example of some pareter names:
 * encryptedCreditCardNumber
 * n1
 * n2
+
+## 4.6 Multiple parameters
+A function can have multiple parameters. The parameters are separated by commas.
+The example below shows a function which takes two parameters.
+Notice that even though the parameters are of the same type, the parameter type is still repeated for each parameter.
+
+```c#
+static void Greet(string name, string language)
+{
+    
+}
+```

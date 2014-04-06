@@ -11,7 +11,7 @@ the majority of the concepts covered in each lesson are applicable to other lang
 1. [The Basics](01-the-basics.md): console input, output; data types; variables; numeric arithmetic.
 2. [Decision Making](02-decision-making.md): think like a programmer with flow-charts.
 3. [Decision Making (cont.)](03-decision-making-cont.md): if-else statements; code comment.
-4. [Functions](04-functions.md): functions
+4. [Functions](04-functions.md): introduction functions and function parameters
 5. Loops: while loops; for loops.
 6. Functions: declaring and calling functions; function parameters.
 7. Arrays: one dimensional arrays.

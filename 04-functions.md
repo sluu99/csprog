@@ -70,7 +70,7 @@ It is pretty straight forward to declare a new function (for the purpose of this
 * After the function signature is a pair of curly braces `{ }` that encloses the body of the function.
 
 
-## 4.3 Function naming conventions:
+## 4.3 Function naming conventions
 * C# (and .NET) convention uses "PascalCase" for function names, meaning that each word of the function name starts with an captialized letter.
 * Function names must begin with a captialized alphabet letter. Any alpha-numeric characters are acceptable after that.
 * It's recommended that function names start with a verb.
@@ -126,7 +126,7 @@ This function signature tells C# that anyone who calls `PromptUser` must provide
 
 > Notice that I have two extra white spaces around "Y." I'll let you figure out why I intentially do this and what `variableName.Trim()` does.
 
-## 4.5 Parameter naming conventions:
+## 4.5 Parameter naming conventions
 Naming parameters is very similar to naming variables. Besides picking a meaningful name, here are the general rules of thumb:
 * C# uses "camelCase" for parameter names, meaning that the first world is lower case. The other words in the name are captialized.
 * Parameter names must begin with a lower case alphabet letter. Any alpha-numeric characters can follow.
@@ -148,5 +148,84 @@ Notice that even though the parameters are of the same type, the parameter type 
 static void Greet(string name, string language)
 {
     
+}
+```
+
+## 4.7 Return type
+So far, the functions we have writen do not return anything. Meaning that they perform certain actions, and then the function ends. There are many cases when it's useful for a function to return some value, such as a function which calculate the average of three numbers. It would be pretty pointless if the function does all the calculations and just keep the result to itself.
+
+Here's a function which calculate the average of three numbers:
+
+```c#
+static float Average(int x, int y, int z)
+{
+    long total = x + y + z;
+    float average = total / 3.0f;
+    
+    return average;
+}
+```
+
+At a first glance, this function looks very similar to the functions we have seen so far &ndash; it is.
+The difference is that we had replaced the keyword `void` with `float`. This lets C# know that the function is returning a floating point number.
+
+As you might have guessed, the `return` command returns a value and quit the function. *When a `return` command is executed, it completely quits the function and anything after it will be ignored.*
+
+Another thing I want to point your attention to is the data types used in this function. It is not a coincident that the function uses a `long` variable to hold the total. Because each data type has a maximum limit, it took into consideration that adding three `int`s together might **overflow** if the values are two large.
+
+> For science: What is the maximum value for an `int`, and a `long`? What is the best way to obtain that value in C#? What happens when we try to overflow an `int`?
+
+## 4.8 Variable scope
+Consider this example:
+
+```c#
+static void AddOne(int x)
+{
+    x = x + 1;
+    Console.WriteLine("Two: {0}", x);
+}
+
+static void Main(string args[])
+{
+    int x = 10;
+    
+    Console.WriteLine("One: {0}", x);
+    
+    AddOne(x);
+    
+    Console.WriteLine("Three: {0}", x);
+}
+```
+
+This program will print out three lines:
+
+```
+One: 10
+Two: 11
+Three: 10
+```
+
+Inside the `Main` function, the value of `x` never changed. That is because when `x` is passed into `AddOne`, the computer made a copy of its value. This is also true for the data types that we have used so far: `char`, `short`, `long`, `float`, `double`, `string`, ...
+
+The correct way to write this program should be
+
+```c#
+static int AddOne(int x)
+{
+    x = x + 1;
+    Console.WriteLine("Two: {0}", x);
+    
+    return x;
+}
+
+static void Main(string args[])
+{
+    int x = 10;
+    
+    Console.WriteLine("One: {0}", x);
+    
+    x = AddOne(x);
+    
+    Console.WriteLine("Three: {0}", x);
 }
 ```

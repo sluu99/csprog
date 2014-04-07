@@ -237,3 +237,10 @@ static void Main(string[] args)
     Console.WriteLine("Three: {0}", x);
 }
 ```
+
+
+## 4.9 Exercises
+
+1. Write a function called `IsEven` that returns a `bool`. The function will have an `int` parameter. It will return `true` if the number is an even number, and `false` otherwise.
+2. Write a function called `IsLeapYear` that returns a `bool`. The function will have a parameter called `year`. It should return `true` or `false`, indicating whether the input is a leap year.
+3. Write a function called `NumberOfDays` that returns an `int`. The function will have two parameters called `month` and `year`. The function will return the number of days in that month, for the respective year.

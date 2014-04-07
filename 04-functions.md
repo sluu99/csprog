@@ -226,7 +226,7 @@ static int AddOne(int x)
     return x;
 }
 
-static void Main(string args[])
+static void Main(string[] args)
 {
     int x = 10;
     

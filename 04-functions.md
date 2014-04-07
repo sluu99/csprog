@@ -164,6 +164,14 @@ static float Average(int x, int y, int z)
     
     return average;
 }
+
+static void Main(string[] args)
+{
+    float avg;
+    avg = Average(5, 6, 1000); // think about Console.ReadLine()
+    
+    Console.WriteLine(avg);
+}
 ```
 
 At a first glance, this function looks very similar to the functions we have seen so far &ndash; it is.

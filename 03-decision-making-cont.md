@@ -309,7 +309,7 @@ Two other interesting boolean operators that you'll explore in the exercises are
 
 ![Truth Table](screenshots/03/truth-table.png)
 
-The same example using `witch` statement:
+The same example using `switch` statement:
 
 ```c#
 int month;

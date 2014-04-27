@@ -13,9 +13,8 @@ the majority of the concepts covered in each lesson are applicable to other lang
 3. [Decision Making (cont.)](03-decision-making-cont.md): if-else statements; code comment.
 4. [Functions](04-functions.md): introduction functions and function parameters
 5. Loops: while loops; for loops.
-6. Functions: declaring and calling functions; function parameters.
-7. Arrays: one dimensional arrays.
-8. Sorting: bubble sort.
+6. Arrays: one dimensional arrays.
+7. Sorting: bubble sort.
 
 ### Why C#?
 It was a hard choice when I had to decide on what language to use for teaching programming, but at the end I belive C# is the right choice. The reasons are:

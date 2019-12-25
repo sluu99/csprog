@@ -4,7 +4,7 @@ Programming with C#
 This class aims to teach programming to folks without computer science background. Even though the class uses C#,
 the majority of the concepts covered in each lesson are applicable to other languages as well.
 
-**If you have any questions or feedback, please email me or visit [reddit's /r/mycourses](http://www.reddit.com/r/mycourses).**
+**If you have any questions or feedback, please email me.**
 
 ### Lessons:
 
